@@ -1,10 +1,28 @@
 #include "Cow.h"
 
-// TODO: write your code to initialize the static (const) member variable
+const string Cow::SAYS = "Moo!";
 
-// TODO: write your code of the constructor
+Cow::Cow(string name, int age, int weight)
+    : name(name), age(age), weight(weight){
 
-// TODO: write your code of the member functions (incrementAge(), setWeight(int weight), getAnimalType())
+    }
 
-// TODO: write your code of the overloaded << operator
+void Cow::incrementAge(){
+    age++;
+}
 
+void Cow::setWeight(int weight){
+    this->weight = weight;
+}
+
+string Cow::getAnimalType(){
+    return "Cow";
+}
+
+ostream& operator<<(ostream& out, Cow& cow){
+    out << "Name: " << cow.name << endl;
+    out << "Age: " << cow.age << endl;
+    out << "Weight: " << cow.weight << " lbs" << endl;
+
+    return out;
+}

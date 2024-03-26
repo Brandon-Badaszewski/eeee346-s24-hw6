@@ -1,0 +1,30 @@
+Let's remember our farm animal noises!
+A cow says: Moo!
+A sheep says: Baa!
+
+Let's see who is on the farm!
+We have a Cow
+Name: Moolissa
+Age: 5
+Weight: 1225 lbs
+
+We have a Sheep
+Name: Dolly
+Age: 1
+Weight: 125 lbs
+
+1 year passes. The animals are getting older and fatter.
+Name: Moolissa
+Age: 6
+Weight: 1400 lbs
+
+Name: Dolly
+Age: 2
+Weight: 140 lbs
+
+In the underground barn...
+Old MacDonald has been experimenting with cloning!
+Welcome to the farm a Sheep clone.
+Name: Dolly Clone
+Age: 2
+Weight: 140 lbs

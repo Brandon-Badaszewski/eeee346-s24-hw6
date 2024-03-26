@@ -1,12 +1,34 @@
 #include "Sheep.h"
 
-// TODO: write your code to initialize the static (const) member variable
+const string Sheep::SAYS = "Baa!";
 
-// TODO: write your code of the constructor
+Sheep::Sheep(std::string name, int age, int weight)
+    : name(name), age(age), weight(weight){
 
-// TODO: write your code of the copy constructor
+    }
 
-// TODO: write your code of the member functions (incrementAge(), setWeight(int weight), getAnimalType())
+Sheep::Sheep(Sheep &sheep)
+    : Sheep(sheep.name + " Clone", sheep.age, sheep.weight){
 
-// TODO: write your code of the overloaded << operator
+    }
+
+void Sheep::incrementAge(){
+    age++;
+}
+
+void Sheep::setWeight(int weight){
+    this->weight = weight;
+}
+
+string Sheep::getAnimalType(){
+    return "Sheep";
+}
+
+ostream& operator<<(ostream& out, Sheep& sheep){
+    out << "Name: " << sheep.name << endl;
+    out << "Age: " << sheep.age << endl;
+    out << "Weight: " << sheep.weight << " lbs" << endl;
+
+    return out;
+}
 
